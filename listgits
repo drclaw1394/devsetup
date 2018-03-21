@@ -1,0 +1,2 @@
+function listgits()
+for l in $(find laminar* -name ".git");do if [ -d $l ]; then pushd $l; cd .. ; git status -sb; popd; fi;done    
